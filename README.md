@@ -1,4 +1,4 @@
-This project was created in Postgre SQL to demonstrate several simple but effective functions used for data sets.
+This project was created in PostgreSQL to demonstrate several simple but effective functions used for data sets.
 
 Table creation: 6 different tables were created and values were inserted into the table.  These tables were suggested in Practical SQL(2022).
 
