@@ -44,12 +44,12 @@ FROM district_2020_enrollment AS e
 INNER JOIN district_2020 AS d20 ON e.id = d20.id
 WHERE e.enrollment < 500;
 
-/* Find schools with above average employment using a subquery*/
+/* Find schools with above average enrollment using a subquery*/
 SELECT d.school_2020, e.enrollment
 FROM district_2020_enrollment AS e
 INNER JOIN district_2020 AS d ON e.id = d.id
 WHERE e.enrollment > (SELECT AVG(enrollment) 
-					  FROM district_2020_enrollment);
+		      FROM district_2020_enrollment);
 
 
 
